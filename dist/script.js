@@ -5,9 +5,6 @@ const clearBtn = document.getElementById('clearBtn');
 const saveBtn = document.getElementById('saveBtn'); // 獲取新的儲存按鈕
 
 // ... (你原有的程式碼) ...
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-const clearBtn = document.getElementById('clearBtn');
 // 設置畫布大小為視窗大小
 function resizeCanvas() {
   canvas.width = window.innerWidth;

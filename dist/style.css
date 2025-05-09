@@ -7,7 +7,7 @@ body, html {
   background-color: var(--system-background-color, #f0f0f0);
   /* 預設背景顏色 */
   user-select: none;
-  touch-action: none; 
+  touch-action: none;
 }
 
 /* 畫布樣式 */
@@ -17,14 +17,14 @@ body, html {
   display: block;
   background-color: var(--system-background-color, #f0f0f0);
   user-select: none;
-  touch-action: none; 
+  touch-action: none;
 }
 
 /* 清除按鈕樣式 */
 #clearBtn {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 70px; /* 調整位置，避免與新按鈕重疊 */
   padding: 10px 20px;
   background-color: #ff6347;
   color: white;
@@ -39,4 +39,25 @@ body, html {
 
 #clearBtn:hover {
   background-color: #e55347;
+}
+
+/* 儲存按鈕樣式 */
+#saveBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* 綠色 */
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+#saveBtn:hover {
+  background-color: #45a049;
 }

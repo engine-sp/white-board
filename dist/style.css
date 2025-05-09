@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 基本頁面樣式 */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--system-background-color, #f0f0f0);
+  /* 預設背景顏色 */
+  user-select: none;
+}
+
+/* 畫布樣式 */
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: var(--system-background-color, #f0f0f0);
+  user-select: none;
+}
+
+/* 清除按鈕樣式 */
+#clearBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+#clearBtn:hover {
+  background-color: #e55347;
+}

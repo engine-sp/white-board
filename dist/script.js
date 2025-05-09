@@ -121,3 +121,9 @@ function getContrastColor(color) {
   const brightness = 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
   return brightness > 128 ? '#000000' : '#FFFFFF';  // 返回黑色或白色
 }
+
+const canvas2 = document.getElementById('canvas'); // 替換為你的 Canvas ID
+
+canvas2.addEventListener('touchmove', function(event) {
+  event.preventDefault(); // 阻止 touchmove 的預設行為，包括下拉重新整理
+}, { passive: false }); // passive: false 是必要的，才能調用 preventDefault()

@@ -7,6 +7,7 @@ body, html {
   background-color: var(--system-background-color, #f0f0f0);
   /* 預設背景顏色 */
   user-select: none;
+  touch-action: none; 
 }
 
 /* 畫布樣式 */
@@ -16,6 +17,7 @@ body, html {
   display: block;
   background-color: var(--system-background-color, #f0f0f0);
   user-select: none;
+  touch-action: none; 
 }
 
 /* 清除按鈕樣式 */
